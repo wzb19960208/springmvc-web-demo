@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class notLogin_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -44,12 +44,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<html>\n");
-      out.write("  <head>\n");
-      out.write("    <title>根页面</title>\n");
-      out.write("  </head>\n");
-      out.write("  <body>\n");
-      out.write("  这是根页面！！！\n");
-      out.write("  </body>\n");
+      out.write("<head>\n");
+      out.write("    <title>Title</title>\n");
+      out.write("</head>\n");
+      out.write("<body>\n");
+      out.write("    请您登陆！\n");
+      out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

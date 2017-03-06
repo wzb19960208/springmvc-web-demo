@@ -35,7 +35,7 @@ public class FileUploadController {
 
 
         //临时文件(绝对路径)
-        File destFile = new File("/Users/weizhibin/Desktop/gs-uploading-files-master/upmTestDemo/upload-dir");
+        File destFile = new File("/Users/weizhibin/Desktop/springmvc-web-demo/upmTestDemo/upload-dir");
 
         //bugID文件夹
         if (!destFile.exists())

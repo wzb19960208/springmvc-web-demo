@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by weizhibin on 2017/3/3.
  */
-//@WebFilter(filterName="myFilter",urlPatterns="/*")
+@WebFilter(filterName="myFilter",urlPatterns="/*")
 public class ErrorFilter implements Filter {
 
 
@@ -25,8 +25,8 @@ public class ErrorFilter implements Filter {
 
         System.out.println("执行过滤操作");
         //重定向
-//        request.getRequestDispatcher("/WEB-INF/views/errorPage.jsp")
-//                .forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/notLogin.jsp")
+                .forward(request, response);
 
 
 //        try {
